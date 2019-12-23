@@ -1,0 +1,30 @@
+{
+  "name": "plug",
+  "version": "1.0.0",
+  "description": "CSVファイルの簡単な編集を行う",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "format": "prettier-eslint --write 'src/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onesword0618/plug.git"
+  },
+  "keywords": [],
+  "author": "onesword0618",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onesword0618/plug/issues"
+  },
+  "homepage": "https://github.com/onesword0618/plug#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "acorn": "^6.4.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^24.9.0",
+    "prettier": "1.19.1",
+    "prettier-eslint": "^9.0.1",
+    "prettier-eslint-cli": "^5.0.0"
+  }
+}
