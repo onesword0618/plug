@@ -19,10 +19,10 @@
 ```
   npm i -D jest
 ```
-> [npm-install](https://docs.npmjs.com/cli/install#description)
-> [npm-package-jest](https://www.npmjs.com/package/jest)
-> [about-jest](https://jestjs.io/)
-> [jest-Getting-started](https://jestjs.io/docs/en/getting-started.html)
+> [npm-install](https://docs.npmjs.com/cli/install#description)  
+> [npm-package-jest](https://www.npmjs.com/package/jest)  
+> [about-jest](https://jestjs.io/)  
+> [jest-Getting-started](https://jestjs.io/docs/en/getting-started.html)  
 
 ```
 $ npx jest --init
@@ -44,46 +44,46 @@ The following questions will help Jest to create a suitable configuration for yo
 
 `jest.config.js` が生成される。
 
-> [npm-package-npx](https://www.npmjs.com/package/npx)
-> [about-npx](https://github.com/zkat/npx#readme)
-> [jest-configuration](https://jestjs.io/docs/en/configuration.html)
+> [npm-package-npx](https://www.npmjs.com/package/npx)  
+> [about-npx](https://github.com/zkat/npx#readme)  
+> [jest-configuration](https://jestjs.io/docs/en/configuration.html)  
 
 ### フォーマッター  
 ```
 npm i -D -E prettier 
 ```
-> [npm-package-prettier](https://www.npmjs.com/package/prettier)
-> [about-prettier](https://prettier.io/)
-> [prettier-Getting-started](https://prettier.io/docs/en/install.html)
-> [prettier-option](https://prettier.io/docs/en/options.html)
+> [npm-package-prettier](https://www.npmjs.com/package/prettier)  
+> [about-prettier](https://prettier.io/)  
+> [prettier-Getting-started](https://prettier.io/docs/en/install.html)  
+> [prettier-option](https://prettier.io/docs/en/options.html)  
 
-* `-E`が付与されているのは[prettier-Getting-started](https://prettier.io/docs/en/install.html)で推奨されていたので。
+* `-E`が付与されているのは[prettier-Getting-started](https://prettier.io/docs/en/install.html)で推奨されていたので。  
 
 ## リントツール  
 ```
 npm i -D prettier-eslint prettier-eslint-cli eslint-config-google
 ```
 
-> [npm-package-prettier-eslint](https://www.npmjs.com/package/prettier-eslint)
-> [about-eslint](https://eslint.org/)
-> [npm-package-eslint](https://www.npmjs.com/package/eslint)
-> [eslint-Getting-started](https://eslint.org/docs/user-guide/getting-started)
-> [prettier-eslint](https://github.com/prettier/prettier-eslint#readme)
-> [npm-package-prettier-eslint-cli](https://www.npmjs.com/package/prettier-eslint-cli)
-> [prettier-eslint-cli](https://github.com/prettier/prettier-eslint-cli#readme)
-> [npm-package-eslint-config-google](https://www.npmjs.com/package/eslint-config-google)
-> [eslint-config-google](https://github.com/google/eslint-config-google#readme)
-> [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html#formatting-braces)
+> [npm-package-prettier-eslint](https://www.npmjs.com/package/prettier-eslint)  
+> [about-eslint](https://eslint.org/)  
+> [npm-package-eslint](https://www.npmjs.com/package/eslint)  
+> [eslint-Getting-started](https://eslint.org/docs/user-guide/getting-started)  
+> [prettier-eslint](https://github.com/prettier/prettier-eslint#readme)  
+> [npm-package-prettier-eslint-cli](https://www.npmjs.com/package/prettier-eslint-cli)  
+> [prettier-eslint-cli](https://github.com/prettier/prettier-eslint-cli#readme)  
+> [npm-package-eslint-config-google](https://www.npmjs.com/package/eslint-config-google)  
+> [eslint-config-google](https://github.com/google/eslint-config-google#readme)  
+> [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html#formatting-braces)  
 
 `acorn-globals`,`espree`の依存関係で```npm i -D  acorn@^6.0.0```が必要
-> [acorn](https://www.npmjs.com/package/acorn/v/6.0.0)
-> [about-acorn](https://github.com/acornjs/acorn)
+> [acorn](https://www.npmjs.com/package/acorn/v/6.0.0)  
+> [about-acorn](https://github.com/acornjs/acorn)  
 
 ### リントツールの設定ファイル作成  
 ```bash
 touch .eslintrc.json  
 ```
-> [Configuring ESLint](https://eslint.org/docs/user-guide/configuring)
+> [Configuring ESLint](https://eslint.org/docs/user-guide/configuring)  
 
 #### 下記の内容を記載する  
 ```json
@@ -94,8 +94,8 @@ touch .eslintrc.json
   }
 }
 ```
-[eslint-extends](https://eslint.org/docs/user-guide/configuring#using-the-configuration-from-a-plugin)
-[eslint-parserOptions/ecmaVersion](https://eslint.org/docs/user-guide/configuring#specifying-parser-options)
-[JavaScript language resources](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources)
+[eslint-extends](https://eslint.org/docs/user-guide/configuring#using-the-configuration-from-a-plugin)  
+[eslint-parserOptions/ecmaVersion](https://eslint.org/docs/user-guide/configuring#specifying-parser-options)  
+[JavaScript language resources](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources)  
 
 TODO 開発中や、調査過程で必要だと思うパッケージが出てきたら採用する。
