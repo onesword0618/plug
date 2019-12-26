@@ -1,4 +1,4 @@
-![logo](doc/assets/logo/logo.png)
+![logo](docs/assets/logo/logo.png)
 
 CSVファイルの簡単な編集を行う
 
