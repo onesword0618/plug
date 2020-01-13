@@ -99,3 +99,8 @@ touch .eslintrc.json
 [JavaScript language resources](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources)  
 
 TODO 開発中や、調査過程で必要だと思うパッケージが出てきたら採用する。
+
+### トランスパイルツールの設定ファイル作成  
+```shell
+npm i -D @babel/core @babel/cli @babel/preset-env
+```
