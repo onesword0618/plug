@@ -18,16 +18,21 @@
     "url": "https://github.com/onesword0618/plug/issues"
   },
   "homepage": "https://github.com/onesword0618/plug#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.15.3",
+    "babel-preset-minify": "^0.5.1"
+  },
   "devDependencies": {
-    "@babel/cli": "^7.8.0",
-    "@babel/core": "^7.8.0",
-    "@babel/preset-env": "^7.8.2",
-    "acorn": "^6.4.0",
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "acorn": "^8.4.1",
+    "core-js": "^3.16.2",
     "eslint-config-google": "^0.14.0",
-    "jest": "^24.9.0",
-    "prettier": "1.19.1",
-    "prettier-eslint": "^9.0.1",
-    "prettier-eslint-cli": "^5.0.0"
+    "jest": "^27.0.6",
+    "prettier": "2.3.2",
+    "prettier-eslint": "^13.0.0",
+    "prettier-eslint-cli": "^5.0.1"
   }
 }
