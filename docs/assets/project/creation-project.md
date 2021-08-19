@@ -1,28 +1,34 @@
+# プロダクト作成
 
-# プロダクト作成  
+## npm パッケージの作成
 
-## npm パッケージの作成  
 ```
- npm init -y  
+ npm init -y
 ```
-> [npm-init](https://docs.npmjs.com/cli/init.html#description)  
 
-## 内部ディレクトリ作成  
+> [npm-init](https://docs.npmjs.com/cli/init.html#description)
+
+## 内部ディレクトリ作成
+
 ```bash
   mkdir -pv src/test && mkdir -v src/main
   mkdir -pv doc/assets/logo && mkdir -v doc/project
 ```
-> [mkdir](https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html#mkdir-invocation)  
 
-## 開発時に利用するフレームワーク、ツール  
-### テストフレームワーク  
+> [mkdir](https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html#mkdir-invocation)
+
+## 開発時に利用するフレームワーク、ツール
+
+### テストフレームワーク
+
 ```
   npm i -D jest
 ```
+
 > [npm-install](https://docs.npmjs.com/cli/install#description)  
 > [npm-package-jest](https://www.npmjs.com/package/jest)  
 > [about-jest](https://jestjs.io/)  
-> [jest-Getting-started](https://jestjs.io/docs/en/getting-started.html)  
+> [jest-Getting-started](https://jestjs.io/docs/en/getting-started.html)
 
 ```
 $ npx jest --init
@@ -40,26 +46,29 @@ The following questions will help Jest to create a suitable configuration for yo
 
 ```
 
-*`$HOME` instead of your environment.* 
+_`$HOME` instead of your environment._
 
 `jest.config.js` が生成される。
 
 > [npm-package-npx](https://www.npmjs.com/package/npx)  
 > [about-npx](https://github.com/zkat/npx#readme)  
-> [jest-configuration](https://jestjs.io/docs/en/configuration.html)  
+> [jest-configuration](https://jestjs.io/docs/en/configuration.html)
 
-### フォーマッター  
+### フォーマッター
+
 ```
-npm i -D -E prettier 
+npm i -D -E prettier
 ```
+
 > [npm-package-prettier](https://www.npmjs.com/package/prettier)  
 > [about-prettier](https://prettier.io/)  
 > [prettier-Getting-started](https://prettier.io/docs/en/install.html)  
-> [prettier-option](https://prettier.io/docs/en/options.html)  
+> [prettier-option](https://prettier.io/docs/en/options.html)
 
-* `-E`が付与されているのは[prettier-Getting-started](https://prettier.io/docs/en/install.html)で推奨されていたので。  
+- `-E`が付与されているのは[prettier-Getting-started](https://prettier.io/docs/en/install.html)で推奨されていたので。
 
-## リントツール  
+## リントツール
+
 ```
 npm i -D prettier-eslint prettier-eslint-cli eslint-config-google
 ```
@@ -73,19 +82,23 @@ npm i -D prettier-eslint prettier-eslint-cli eslint-config-google
 > [prettier-eslint-cli](https://github.com/prettier/prettier-eslint-cli#readme)  
 > [npm-package-eslint-config-google](https://www.npmjs.com/package/eslint-config-google)  
 > [eslint-config-google](https://github.com/google/eslint-config-google#readme)  
-> [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html#formatting-braces)  
+> [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html#formatting-braces)
 
-`acorn-globals`,`espree`の依存関係で```npm i -D  acorn@^6.0.0```が必要
+`acorn-globals`,`espree`の依存関係で`npm i -D acorn@^6.0.0`が必要
+
 > [acorn](https://www.npmjs.com/package/acorn/v/6.0.0)  
-> [about-acorn](https://github.com/acornjs/acorn)  
+> [about-acorn](https://github.com/acornjs/acorn)
 
-### リントツールの設定ファイル作成  
+### リントツールの設定ファイル作成
+
 ```bash
-touch .eslintrc.json  
+touch .eslintrc.json
 ```
-> [Configuring ESLint](https://eslint.org/docs/user-guide/configuring)  
 
-#### 下記の内容を記載する  
+> [Configuring ESLint](https://eslint.org/docs/user-guide/configuring)
+
+#### 下記の内容を記載する
+
 ```json
 {
   "extends": ["google"],
@@ -94,13 +107,17 @@ touch .eslintrc.json
   }
 }
 ```
+
 [eslint-extends](https://eslint.org/docs/user-guide/configuring#using-the-configuration-from-a-plugin)  
 [eslint-parserOptions/ecmaVersion](https://eslint.org/docs/user-guide/configuring#specifying-parser-options)  
-[JavaScript language resources](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources)  
+[JavaScript language resources](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources)
 
 TODO 開発中や、調査過程で必要だと思うパッケージが出てきたら採用する。
 
-### トランスパイルツールの設定ファイル作成  
+### トランスパイルツールの設定ファイル作成
+
 ```shell
-npm i -D @babel/core @babel/cli @babel/preset-env
+npm i core-js@3
+npm i core-js@3 @babel/runtime-corejs3 babel-preset-minify
+npm i -D @babel/core @babel/cli @babel/preset-env @babel/plugin-transform-runtime
 ```

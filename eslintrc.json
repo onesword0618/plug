@@ -1,8 +1,6 @@
 {
-    "extends": [
-        "google"
-    ],
-    "parserOptions": {
-        "ecmaVersion": 11
-    }
+  "extends": ["google"],
+  "parserOptions": {
+    "ecmaVersion": 11
+  }
 }
